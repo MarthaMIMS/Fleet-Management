@@ -12,11 +12,11 @@ import java.util.List;
 public class TaxiServiceImplementation implements TaxiServices {
 
     @Autowired
-    private final TaxiRepository repository;
+    private  TaxiRepository repository;
 
-    public TaxiServiceImplementation(TaxiRepository repository) {
+ /*   public TaxiServiceImplementation(TaxiRepository repository) {
         this.repository = repository;
-    }
+    }*/
 
     @Override
     public List<TaxiEnt> ConsultarTaxis() {
@@ -29,6 +29,6 @@ public class TaxiServiceImplementation implements TaxiServices {
     }
 
     public List<TaxiEnt> getAllTaxis() {
-        return null;
+        return this.repository.findAll();
     }
 }

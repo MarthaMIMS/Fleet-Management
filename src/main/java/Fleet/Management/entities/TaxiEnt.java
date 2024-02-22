@@ -1,6 +1,8 @@
 package Fleet.Management.entities;
 
-import javax.persistence.*;
+//import javax.persistence.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "taxis")
