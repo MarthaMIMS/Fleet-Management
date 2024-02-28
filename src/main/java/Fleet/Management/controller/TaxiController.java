@@ -22,5 +22,6 @@ public class TaxiController {
     public Page<TaxiEnt> getAllTaxis(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
         Pageable pageable = PageRequest.of(page, size);
         return taxiService.getAllTaxis(pageable);
+        //
     }
 }
